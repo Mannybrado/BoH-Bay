@@ -223,11 +223,9 @@
 /turf/simulated/floor/usedup,
 /area/ship/scrap/command/captain)
 "bX" = (
-/obj/machinery/telecomms/receiver,
 /turf/simulated/floor/bluegrid,
 /area/ship/scrap/comms)
 "ci" = (
-/obj/machinery/telecomms/broadcaster,
 /obj/structure/cable{
 	dir = 1
 	},
@@ -299,7 +297,15 @@
 /turf/space,
 /area/space)
 "cT" = (
-/obj/machinery/telecomms/hub/preset,
+/obj/random/closet,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
 /turf/simulated/floor/bluegrid,
 /area/ship/scrap/comms)
 "cU" = (
@@ -453,7 +459,7 @@
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/saloon)
 "dO" = (
-/obj/machinery/telecomms/bus,
+/obj/structure/closet/toolcloset,
 /turf/simulated/floor/bluegrid,
 /area/ship/scrap/comms)
 "dP" = (
@@ -470,15 +476,13 @@
 /turf/simulated/floor/reinforced/airless,
 /area/ship/scrap/maintenance/engine/aft)
 "dV" = (
-/obj/machinery/computer/telecomms/monitor{
-	dir = 8
-	},
 /obj/machinery/alarm{
 	dir = 8;
 	icon_state = "alarm0";
 	pixel_x = 24;
 	req_access = newlist()
 	},
+/obj/structure/closet/wardrobe/tactical,
 /turf/simulated/floor/bluegrid,
 /area/ship/scrap/comms)
 "dX" = (
@@ -542,7 +546,7 @@
 /turf/space,
 /area/space)
 "eA" = (
-/obj/machinery/telecomms/server,
+/obj/structure/closet/crate/internals,
 /turf/simulated/floor/bluegrid,
 /area/ship/scrap/comms)
 "eL" = (
@@ -552,9 +556,7 @@
 /turf/simulated/floor/bluegrid,
 /area/ship/scrap/comms)
 "eR" = (
-/obj/machinery/computer/telecomms/server{
-	dir = 8
-	},
+/obj/structure/closet/crate/med_crate,
 /turf/simulated/floor/bluegrid,
 /area/ship/scrap/comms)
 "eY" = (
