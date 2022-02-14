@@ -1,6 +1,18 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
 )
+"c" = (
+/obj/machinery/access_button/airlock_exterior{
+	master_tag = "bearcat_dock_port_e";
+	pixel_x = -10;
+	pixel_y = 24
+	},
+/obj/machinery/door/airlock/external/bolted/cycling{
+	id_tag = "dock_port_out_e"
+	},
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor/tiled/usedup,
+/area/space)
 "d" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -13,6 +25,28 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
+/area/space)
+"e" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/airlock_sensor{
+	id_tag = "dock_port_sensor";
+	pixel_y = 36
+	},
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	id_tag = "bearcat_dock_port_e";
+	pixel_y = 25;
+	tag_airpump = "dock_port_pump_e";
+	tag_chamber_sensor = "dock_port_sensor_e";
+	tag_exterior_door = "dock_port_out_e";
+	tag_interior_door = "dock_port_in_e"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4;
+	icon_state = "intact"
+	},
+/turf/simulated/floor/tiled/usedup,
 /area/space)
 "f" = (
 /turf/space,
@@ -48,7 +82,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/machinery/suit_storage_unit/explorer{
+/obj/machinery/suit_cycler/exploration{
 	req_access = list()
 	},
 /turf/simulated/floor/tiled/dark,
@@ -65,6 +99,21 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
+/area/space)
+"m" = (
+/obj/machinery/access_button/airlock_interior{
+	master_tag = "bearcat_dock_port_e";
+	pixel_x = 9;
+	pixel_y = 24
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4;
+	icon_state = "intact"
+	},
+/obj/machinery/door/airlock/external/bolted/cycling{
+	id_tag = "dock_port_in_e"
+	},
+/turf/simulated/floor/tiled/usedup,
 /area/space)
 "n" = (
 /obj/effect/floor_decal/techfloor/orange,
@@ -96,15 +145,13 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
 /obj/random/closet,
 /obj/item/weapon/storage/backpack/explorer,
 /turf/simulated/floor/tiled/dark,
 /area/space)
 "t" = (
-/turf/simulated/floor/wood/mahogany,
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor/tiled/techfloor,
 /area/space)
 "u" = (
 /obj/effect/floor_decal/corner/black/diagonal{
@@ -134,6 +181,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/space)
+"x" = (
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor/wood/yew,
+/area/space)
 "z" = (
 /obj/effect/floor_decal/corner/black/diagonal{
 	dir = 4
@@ -155,6 +206,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/space)
+"D" = (
+/obj/machinery/door/airlock/autoname/engineering,
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
 "E" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -162,8 +217,9 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/random/closet,
-/obj/item/weapon/storage/backpack/explorer,
+/obj/structure/closet/secure_closet/guncabinet{
+	req_access = list()
+	},
 /turf/simulated/floor/tiled/dark,
 /area/space)
 "F" = (
@@ -171,6 +227,14 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
+/area/space)
+"G" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 4;
+	frequency = 1379;
+	id_tag = "dock_port_pump_e"
+	},
+/turf/simulated/floor/tiled/usedup,
 /area/space)
 "H" = (
 /obj/effect/floor_decal/corner/black/diagonal{
@@ -185,6 +249,14 @@
 	},
 /obj/machinery/power/port_gen/pacman,
 /turf/simulated/floor/tiled/techfloor/grid,
+/area/space)
+"L" = (
+/obj/machinery/atmospherics/portables_connector,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/canister/air/airlock,
+/turf/simulated/floor/usedup,
 /area/space)
 "M" = (
 /turf/simulated/wall,
@@ -231,9 +303,6 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/suit_storage_unit/explorer{
-	req_access = list()
-	},
 /turf/simulated/floor/tiled/dark,
 /area/space)
 "U" = (
@@ -259,8 +328,13 @@
 /turf/simulated/floor/tiled/white,
 /area/space)
 "Y" = (
-/obj/structure/closet/secure_closet/guncabinet{
-	req_access = list()
+/obj/machinery/door/airlock/autoname/command,
+/turf/simulated/floor/tiled/dark,
+/area/space)
+"Z" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 9;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/space)
@@ -6314,7 +6388,7 @@ f
 f
 f
 h
-V
+c
 h
 f
 f
@@ -6436,7 +6510,7 @@ h
 h
 h
 h
-V
+G
 h
 h
 h
@@ -6557,9 +6631,9 @@ h
 B
 B
 B
-M
-V
-M
+h
+e
+h
 R
 h
 h
@@ -6679,9 +6753,9 @@ M
 B
 B
 B
-M
-V
-M
+h
+m
+h
 q
 o
 o
@@ -6797,12 +6871,12 @@ h
 W
 W
 W
-W
+x
 B
 B
 B
-V
-V
+L
+Z
 M
 Q
 Q
@@ -6925,7 +6999,7 @@ B
 B
 s
 V
-Q
+D
 Q
 Q
 Q
@@ -7284,7 +7358,7 @@ S
 V
 V
 V
-V
+Y
 V
 V
 V
@@ -7529,7 +7603,7 @@ V
 V
 V
 M
-Y
+V
 V
 V
 V
@@ -7769,17 +7843,17 @@ f
 f
 f
 h
-t
-t
-t
-t
+Q
+Q
+Q
+Q
 M
 V
 V
 V
 V
 V
-Q
+D
 Q
 Q
 Q
@@ -7892,9 +7966,9 @@ f
 f
 h
 h
-t
-t
-t
+Q
+Q
+Q
 t
 F
 F
@@ -8016,7 +8090,7 @@ f
 h
 h
 h
-t
+Q
 M
 X
 F
